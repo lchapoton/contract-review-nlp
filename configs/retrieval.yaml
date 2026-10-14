@@ -1,0 +1,9 @@
+seed: 42
+dataset: coastalcph/lex_glue
+subset: ledgar
+results_dir: results
+outputs_dir: outputs
+encoder: sentence-transformers/all-MiniLM-L6-v2
+batch_size: 128
+k_values: [1, 5, 10]
+eval_queries: 2000   # nb de clauses du test utilisées comme requêtes

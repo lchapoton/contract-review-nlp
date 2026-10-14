@@ -1,0 +1,20 @@
+seed: 42
+dataset: coastalcph/lex_glue
+subset: ledgar
+results_dir: results
+outputs_dir: outputs
+run_name: lora
+train_subsample: null
+model_name: roberta-base
+max_length: 256
+lr: 5.0e-4
+epochs: 3
+batch_size: 16
+warmup_ratio: 0.1
+weight_decay: 0.01
+fp16: true
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.1
+  target_modules: [query, value]   # DistilBERT : [q_lin, v_lin]

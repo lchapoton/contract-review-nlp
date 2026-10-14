@@ -1,0 +1,16 @@
+seed: 42
+dataset: coastalcph/lex_glue
+subset: ledgar
+results_dir: results
+outputs_dir: outputs
+run_name: finetune
+train_subsample: null
+model_name: roberta-base     # alternatives : distilbert-base-uncased, nlpaueb/legal-bert-base-uncased
+max_length: 256
+lr: 3.0e-5
+epochs: 3
+batch_size: 16
+warmup_ratio: 0.1
+weight_decay: 0.01
+fp16: true
+lora: null

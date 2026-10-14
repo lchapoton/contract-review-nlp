@@ -1,0 +1,7 @@
+seed: 42
+dataset: coastalcph/lex_glue
+subset: ledgar
+results_dir: results
+outputs_dir: outputs
+# Mettre un entier (ex. 10000) pour aller vite pendant le développement
+train_subsample: null
